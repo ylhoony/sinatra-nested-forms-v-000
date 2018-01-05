@@ -24,6 +24,8 @@ module FormsLab
         new_ship = Ship.new
         binding.pry
         new_ship.name = ship[:name]
+        new_ship.type = ship[:type]
+        new_ship.booty = ship[:booty]
       end
 
       erb :'pirates/show'
