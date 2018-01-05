@@ -20,7 +20,10 @@ module FormsLab
       @pirate.weight = params[:pirate][:weight]
       @pirate.height = params[:pirate][:height]
 
-      params[:pirate][:ships].each do 
+      params[:pirate][:ships].each do |ship|
+        ship = Ship.new
+        ship.name = ship[:name]
+      end
 
       erb :'pirates/show'
     end
