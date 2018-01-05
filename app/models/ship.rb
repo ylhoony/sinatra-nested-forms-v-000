@@ -3,6 +3,14 @@ class Ship
 
   @ships = []
 
+  def initialize
+    self.save
+  end
+
+  def save
+    @ships << self
+  end
+
   def clear
     @ships.clear
   end
