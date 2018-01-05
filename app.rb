@@ -27,6 +27,8 @@ module FormsLab
         new_ship.booty = ship[:booty]
       end
 
+      @ships = Ship.all
+
       erb :'pirates/show'
     end
 
