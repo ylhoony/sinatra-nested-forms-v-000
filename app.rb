@@ -21,9 +21,9 @@ module FormsLab
       @pirate.height = params[:pirate][:height]
 
       params[:pirate][:ships].each do |ship|
-        ship = Ship.new
+        new_ship = Ship.new
         binding.pry
-        ship.name = ship[:name]
+        new_ship.name = ship[:name]
       end
 
       erb :'pirates/show'
