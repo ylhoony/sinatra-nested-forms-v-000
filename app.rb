@@ -22,7 +22,6 @@ module FormsLab
 
       params[:pirate][:ships].each do |ship|
         new_ship = Ship.new
-        binding.pry
         new_ship.name = ship[:name]
         new_ship.type = ship[:type]
         new_ship.booty = ship[:booty]
