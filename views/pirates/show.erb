@@ -4,6 +4,8 @@
 <p>Pirate Height: <%= @pirate.height %></p>
 
 <h2>Ship Information</h2>
+<% @ships.each do |ship| %>
+  <p>Ship Name: <%= ship.name %></p>
 
 
-<h2>Display your second ship here</h2>
+<% end %>
