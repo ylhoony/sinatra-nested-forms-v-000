@@ -10,7 +10,7 @@ module FormsLab
     end
 
     get '/new' do
-      
+      erb :new
     end
 
   end
