@@ -11,7 +11,7 @@ class Ship
     @@ships << self
   end
 
-  def clear
+  def self.clear
     @@ships.clear
   end
 
