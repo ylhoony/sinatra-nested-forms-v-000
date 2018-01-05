@@ -4,7 +4,7 @@ class Ship
   @ships = []
 
   def clear
-
+    @ships.clear
   end
 
 
